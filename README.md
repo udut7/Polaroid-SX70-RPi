@@ -8,19 +8,19 @@ Hardware:
 - RGB led for light indicator replace film counter
 - DC Stepper Motor Drive Controller
 - Power Module Lithium Battery
-- Capacitive Touch Key Switch Module for main menu selection button :
+- Capacitive Touch Key Switch Module for main menu selection button:
     1. Photo to twitter (red light indicator)
     2. Video to twitter (green light indicator)
     3. Future function (blue light indicator)
     4. Restart or Shutdown (white light indicator)
-- Original SX-70 shutter button for action button of each menu selected :
-    1. Action at Photo to twitter menu :
+- Original SX-70 shutter button for action button of each menu selected:
+    1. Action at Photo to twitter menu:
          - Take photo (red light for take photo, green light for upload to twitter)
-    2. Action at Video to twitter menu :
+    2. Action at Video to twitter menu:
          - Start Recording (red light for video record, green light for upload to twitter)
          - Stop Recording
     3. Future function
-    4. Action at Restart or Shutdown menu :
+    4. Action at Restart or Shutdown menu:
          - Short pressed : restart
          - Long pressed : shutdown
 
