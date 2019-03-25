@@ -9,12 +9,12 @@ Hardware:
 - DC Stepper Motor Drive Controller
 - Power Module Lithium Battery
 - Capacitive Touch Key Switch Module for main menu selection button :
-    1. Photo to twiiter (red light indicator)
+    1. Photo to twitter (red light indicator)
     2. Video to twitter (green light indicator)
     3. Future function (blue light indicator)
     4. Restart or Shutdown (white light indicator)
 - Original SX-70 shutter button for action button of each menu selected :
-    1. Action at Photo to twiiter menu :
+    1. Action at Photo to twitter menu :
          - Take photo
     2. Action at Video to twitter menu :
          - Start Recording
