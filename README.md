@@ -24,6 +24,3 @@ Hardware:
          - Short pressed: restart
          - Long pressed: shutdown
 
-
-
-
