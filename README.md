@@ -21,7 +21,7 @@ Hardware:
          - Stop Recording
     3. Future function
     4. Action at Restart or Shutdown menu:
-         - Short pressed : restart
-         - Long pressed : shutdown
+         - Short pressed: restart
+         - Long pressed: shutdown
 
 
