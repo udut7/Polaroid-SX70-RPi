@@ -15,9 +15,9 @@ Hardware:
     4. Restart or Shutdown (white light indicator)
 - Original SX-70 shutter button for action button of each menu selected :
     1. Action at Photo to twitter menu :
-         - Take photo
+         - Take photo (red light for take photo, green light for upload to twitter)
     2. Action at Video to twitter menu :
-         - Start Recording
+         - Start Recording (red light for video record, green light for upload to twitter)
          - Stop Recording
     3. Future function
     4. Action at Restart or Shutdown menu :
