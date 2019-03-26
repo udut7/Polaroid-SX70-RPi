@@ -15,14 +15,14 @@ Hardware:
     4. Restart or Shutdown (white blink indicator)
 - Original SX-70 shutter button for action button of each menu selected (GPIO18):
     1. Action at Photo to twitter menu:
-         - Take photo (red light for take photo, green light for upload to twitter)
+         - Take photo (red light for take photo continued with green light for upload to twitter)
     2. Action at Video to twitter menu:
-         - Start Recording (red light for video record, green light for upload to twitter)
-         - Stop Recording
+         - Start Recording (red light start record)
+         - Stop Recording (red light stop record continued with green light for upload to twitter)
     3. Future function
     4. Action at Restart or Shutdown menu:
-         - Short pressed: restart
-         - Long pressed: shutdown
+         - Short pressed, between 2 until 5 seconds: restart (red light timer)
+         - Long pressed, above 5 seconds: shutdown (red light timer)
 
 Operating System:
 - Raspbian Stretch Lite
