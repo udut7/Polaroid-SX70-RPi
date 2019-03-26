@@ -24,3 +24,5 @@ Hardware:
          - Short pressed: restart
          - Long pressed: shutdown
 
+Operating System:
+- Raspbian Stretch Lite
