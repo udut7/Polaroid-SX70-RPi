@@ -58,10 +58,10 @@ try:
    if GPIO.input(GPIO_SWITCH) == 0:
     stateA = 0
     stateB = 1
-    print ("future function")
+    print ("double exposure photo to twitter")
     rgb(B)
     kill('sx70_video_capture.py')
-    cmd3 = 'python future_function.py &'
+    cmd3 = 'python sx70_photo_de.py &'
     #call ([cmd3], shell=True)
   while stateA == 0 and stateB == 1:
    if GPIO.input(GPIO_SWITCH) == 0:
@@ -69,7 +69,7 @@ try:
     stateB = 0
     print ("restart or shutdown")
     rgb(R)
-    kill('future_function.py')
+    kill('sx70_photo_de.py')
     cmd4 = 'python restart_shutdown.py &'
     call ([cmd4], shell=True)
     while GPIO.input(GPIO_SWITCH) == 0:
