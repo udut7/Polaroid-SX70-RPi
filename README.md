@@ -21,7 +21,7 @@ Hardware:
          - Stop Recording (red light stop record continued with green light for upload to twitter)
     3. Action at Double Exposure Photo to twitter menu:
          - Take first main photo (red light for take photo)
-         - Take second shadow photo (red light for take photo continued with green light for upload to twitter)
+         - Take second transparant photo (red light for take photo continued with green light for upload to twitter)
     4. Action at Restart or Shutdown menu (red light timer):  
          - Short pressed, between 2 until 5 seconds: restart
          - Long pressed, above 5 seconds: shutdown
