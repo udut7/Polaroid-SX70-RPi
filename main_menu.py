@@ -15,6 +15,12 @@ R = GPIO.PWM(16, Freq)
 G = GPIO.PWM(20, Freq)
 B = GPIO.PWM(21, Freq)
 
+for i in range(5):
+ G.start(100)
+ sleep(0.3)
+ G.start(0)
+ sleep(0.1)
+
 stateA = 0
 stateB = 0
 
