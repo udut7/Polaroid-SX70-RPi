@@ -10,19 +10,18 @@ GPIO.setup(16, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(20, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(21, GPIO.OUT, initial=GPIO.LOW)
 
-Freq = 100
-R = GPIO.PWM(16, Freq)
-G = GPIO.PWM(20, Freq)
-B = GPIO.PWM(21, Freq)
-
-for i in range(5):
- G.start(100)
- sleep(0.3)
- G.start(0)
- sleep(0.1)
+R = 16
+G = 20
+B = 21
 
 stateA = 0
 stateB = 0
+
+def rgb(color):
+ led = GPIO.PWM(color, 100)
+ led.start(100)
+ time.sleep(1)
+ led.start(0) 
 
 def kill(string):
  for line in os.popen("ps ax | grep " + string + " | grep -v grep"):
@@ -31,6 +30,10 @@ def kill(string):
   cmdp = 'sudo kill -9 ' + pid
   call ([cmdp], shell=True)
 
+for i in range(3):
+ rgb(G)
+ time.sleep(0.1)
+
 try:
  while True:
   while GPIO.input(GPIO_SWITCH) == 1:
@@ -38,9 +41,7 @@ try:
   stateA = 1
   stateB = 0
   print ("photo to twitter")
-  R.start(100)
-  time.sleep(1)
-  R.start(0)
+  rgb(R)
   kill('restart_shutdown.py')
   cmd1 = 'python sx70_photo.py &'
   call ([cmd1], shell=True)
@@ -49,9 +50,7 @@ try:
     stateA = 1
     stateB = 1
     print ("video to twitter")
-    G.start(100)
-    time.sleep(1)
-    G.start(0)
+    rgb(G)
     kill('sx70_photo.py')
     cmd2 = 'python sx70_video_capture.py &'
     call ([cmd2], shell=True)
@@ -60,9 +59,7 @@ try:
     stateA = 0
     stateB = 1
     print ("future function")
-    B.start(100)
-    time.sleep(1)
-    B.start(0)
+    rgb(B)
     kill('sx70_video_capture.py')
     cmd3 = 'python future_function.py &'
     #call ([cmd3], shell=True)
@@ -71,13 +68,7 @@ try:
     stateA = 0
     stateB = 0
     print ("restart or shutdown")
-    R.start(100)
-    G.start(100)
-    B.start(100)
-    time.sleep(1)
-    R.start(0)
-    G.start(0)
-    B.start(0)
+    rgb(R)
     kill('future_function.py')
     cmd4 = 'python restart_shutdown.py &'
     call ([cmd4], shell=True)
