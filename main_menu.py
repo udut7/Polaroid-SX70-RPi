@@ -2,18 +2,18 @@ import time, os
 import RPi.GPIO as GPIO
 from subprocess import call
 
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO_SWITCH = 7
+GPIO_SWITCH = 4
 GPIO.setup(GPIO_SWITCH,GPIO.IN,pull_up_down = GPIO.PUD_UP)
-GPIO.setup(36, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(38, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(40, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(16, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(20, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(21, GPIO.OUT, initial=GPIO.LOW)
 
 Freq = 100
-R = GPIO.PWM(36, Freq)
-G = GPIO.PWM(38, Freq)
-B = GPIO.PWM(40, Freq)
+R = GPIO.PWM(16, Freq)
+G = GPIO.PWM(20, Freq)
+B = GPIO.PWM(21, Freq)
 
 stateA = 0
 stateB = 0
