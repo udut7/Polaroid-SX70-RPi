@@ -1,4 +1,4 @@
-Polaroid SX-70 camera using Raspberry Pi Zero W python project, auto upload photo and video polaroid style with time and date variables to twitter at https://twitter.com/SX70_RPi
+Polaroid SX-70 camera using Raspberry Pi Zero W python project, auto upload photo double exposure and video polaroid style with time and date variables to twitter at https://twitter.com/SX70_RPi
 
 Hardware:
 - Polaroid SX-70
