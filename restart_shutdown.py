@@ -7,8 +7,11 @@ Button=18
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(Button,GPIO.IN,pull_up_down=GPIO.PUD_UP) #action button
+GPIO.setup(16, GPIO.OUT, initial=GPIO.LOW)
+R = GPIO.PWM(16, 100)
 
 def action(Button):
+ R.start(100)
  timer = 0
  while True:
   if (GPIO.input(Button) == False): 
