@@ -5,14 +5,13 @@ from subprocess import call
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO_SWITCH = 4
-GPIO.setup(GPIO_SWITCH,GPIO.IN,pull_up_down = GPIO.PUD_UP)
-GPIO.setup(16, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(20, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(21, GPIO.OUT, initial=GPIO.LOW)
-
 R = 16
 G = 20
 B = 21
+GPIO.setup(GPIO_SWITCH,GPIO.IN,pull_up_down = GPIO.PUD_UP)
+GPIO.setup(R, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(G, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(B, GPIO.OUT, initial=GPIO.LOW)
 
 stateA = 0
 stateB = 0
@@ -38,15 +37,16 @@ try:
  while True:
   while GPIO.input(GPIO_SWITCH) == 1:
    time.sleep(1)
-  stateA = 1
-  stateB = 0
-  print ("photo to twitter")
-  rgb(R)
-  kill('restart_shutdown.py')
-  cmd1 = 'python sx70_photo.py &'
-  call ([cmd1], shell=True)
+   stateA = 1
+   stateB = 0
+   print ("photo to twitter")
+   rgb(R)
+   kill('restart_shutdown.py')
+   cmd1 = 'python sx70_photo.py &'
+   call ([cmd1], shell=True)
   while stateA == 1 and stateB == 0:
-   if GPIO.input(GPIO_SWITCH) == 0:
+   if GPIO.input(GPIO_SWITCH) == 1:
+    time.sleep(1)
     stateA = 1
     stateB = 1
     print ("video to twitter")
@@ -55,16 +55,18 @@ try:
     cmd2 = 'python sx70_video_capture.py &'
     call ([cmd2], shell=True)
   while stateA == 1 and stateB == 1:
-   if GPIO.input(GPIO_SWITCH) == 0:
+   if GPIO.input(GPIO_SWITCH) == 1:
+    time.sleep(1)
     stateA = 0
     stateB = 1
     print ("double exposure photo to twitter")
     rgb(B)
     kill('sx70_video_capture.py')
     cmd3 = 'python sx70_photo_de.py &'
-    #call ([cmd3], shell=True)
+    call ([cmd3], shell=True)
   while stateA == 0 and stateB == 1:
-   if GPIO.input(GPIO_SWITCH) == 0:
+   if GPIO.input(GPIO_SWITCH) == 1:
+    time.sleep(1)
     stateA = 0
     stateB = 0
     print ("restart or shutdown")
@@ -80,3 +82,4 @@ except KeyboardInterrupt:
  print ("Quit")
  GPIO.cleanup() 
 GPIO.cleanup()
+
