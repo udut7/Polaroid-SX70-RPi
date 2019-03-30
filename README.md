@@ -6,7 +6,7 @@ Hardware:
 - Raspberry Pi Camera
 - 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27)
 - RGB led for light indicator replace film counter (GPIO16, GPIO20 & GPIO21)
-- DC Stepper Motor Drive Controller (GPIO6, GPIO13, GPIO19 & GPIO26)
+- DC Stepper Motor Drive Controller (GPI13, GPIO17, GPIO19 & GPIO26)
 - Power Module Lithium Battery
 - Capacitive Touch Key Switch Module for main menu loop selection button (GPIO4):
     1. Photo to twitter (red blink indicator)
