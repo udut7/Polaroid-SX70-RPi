@@ -13,7 +13,7 @@ Hardware:
 - RGB led for light indicator (GPIO16, GPIO20 & GPIO21) positioned at film counter
 - DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect (optional)
 - Power Module Lithium Battery
-- Capacitive Touch Key Switch Module for main menu loop selection button (GPIO4) positioned at light meter glass:
+- Capacitive Touch Key Switch Module for main menu loop selection button (GPIO4) positioned behind light meter glass:
     1. Photo to twitter (red blink indicator)
     2. Video to twitter (green blink indicator)
     3. Double Exposure Photo to twitter (blue blink indicator)
