@@ -11,7 +11,7 @@ Hardware:
 - Raspberry Pi Camera
 - 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27) (optional) positioned at view finder
 - RGB led for light indicator (GPIO16, GPIO20 & GPIO21) positioned at film counter
-- DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) (optional)
+- DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) (optional) for polaroid mechanical shutter sound effect
 - Power Module Lithium Battery
 - Capacitive Touch Key Switch Module for main menu loop selection button (GPIO4) positioned at light meter glass:
     1. Photo to twitter (red blink indicator)
