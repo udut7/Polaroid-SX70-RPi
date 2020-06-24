@@ -19,7 +19,7 @@ Hardware:
     2. Video to twitter (green blink indicator)
     3. Double Exposure Photo to twitter (blue blink indicator)
     4. Restart or Shutdown (white blink indicator)
-- Original SX-70 shutter button for action button of each main menu selected above (GPIO18):
+- Original SX-70 shutter release for action button of each main menu selected above (GPIO18):
     1. Action at Photo to twitter menu:
          - Take photo (red light for take photo continued with green light for upload to twitter)
     2. Action at Video to twitter menu:
@@ -31,8 +31,12 @@ Hardware:
     4. Action at Restart or Shutdown menu (red light timer):  
          - Short pressed, between 2 until 5 seconds: restart
          - Long pressed, above 5 seconds: shutdown
-- 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27) positioned at view finder (optional)
-- DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect (optional)
-- 5 volt relay (GPIO12) for controlling external led flash light (optional)
+- Main power switch positioned at light control
+
+Optional hardware:
+- 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27) positioned at view finder
+- DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect
+- Yashica Pro-50DX external flash light
+- 5 volt relay (GPIO12) for controlling external led flash light
 
 Next development: black and white photo, shutter sound effect, external flash light
