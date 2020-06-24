@@ -5,13 +5,14 @@ Automatically upload photo single exposure, photo double exposure and video with
 
 ![alt text](https://github.com/udut7/Polaroid-SX70-RPi/blob/master/SX70_RPi.jpg?raw=true "Polaroid SX-70 camera Raspberry Pi Zero W, automatically upload photo to https://twitter.com/SX70_RPi")
 
+Operating System:
+- Raspbian Stretch Lite
+
 Hardware:
 - Polaroid SX-70
 - Raspberry Pi Zero W
 - Raspberry Pi Camera
-- 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27) positioned at view finder (optional)
 - RGB led for light indicator (GPIO16, GPIO20 & GPIO21) positioned at film counter
-- DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect (optional)
 - Power Module Lithium Battery
 - Capacitive Touch Key Module for main menu loop selection button (GPIO4) positioned behind light meter glass:
     1. Photo to twitter (red blink indicator)
@@ -30,6 +31,8 @@ Hardware:
     4. Action at Restart or Shutdown menu (red light timer):  
          - Short pressed, between 2 until 5 seconds: restart
          - Long pressed, above 5 seconds: shutdown
+- 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27) positioned at view finder (optional)
+- DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect (optional)
+- 5 volt relay for controlling external led flash light (optional)
 
-Operating System:
-- Raspbian Stretch Lite
+Next development: black and white photo, shutter sound effect, external flash light
