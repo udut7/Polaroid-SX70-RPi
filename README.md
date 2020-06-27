@@ -12,8 +12,6 @@ Hardware:
 - Polaroid SX-70
 - Raspberry Pi Zero W
 - Raspberry Pi Camera
-- RGB led for light indicator (GPIO16, GPIO20 & GPIO21) positioned at film counter
-- Power Module Lithium Battery
 - Capacitive Touch Key Module for main menu loop selection button (GPIO4) positioned behind light meter glass:
     1. Photo to twitter (red blink indicator)
     2. Video to twitter (green blink indicator)
@@ -31,12 +29,15 @@ Hardware:
     4. Action at Restart or Shutdown menu (red light timer):  
          - Short pressed, between 2 until 5 seconds: restart
          - Long pressed, above 5 seconds: shutdown
+- RGB led for light indicator (GPIO16, GPIO20 & GPIO21) positioned at film counter
 - Main power switch positioned at light control
+- Power Module Lithium Battery
 
 Optional hardware:
 - 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27) positioned at view finder
 - DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect
 - Yashica Pro-50DX external flash light with pcb mounted led
-- 5 volt relay (GPIO12) for controlling external led flash light
+- 433MHz RF wireless transmitter receiver module (GPIO12) for triggering external flash light wirelessly
+- 5 volt relay module for controlling external led flash light
 
 Next development: black and white photo, shutter sound effect, external flash light
