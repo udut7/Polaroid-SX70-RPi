@@ -29,14 +29,14 @@ Hardware:
     4. Action at Restart or Shutdown menu (red light timer):  
          - Short pressed, between 2 until 5 seconds: restart
          - Long pressed, above 5 seconds: shutdown
-- RGB led for light indicator (GPIO16, GPIO20 & GPIO21) positioned at film counter
+- RGB LED for light indicator (GPIO16, GPIO20 & GPIO21) positioned at film counter
 - Main power switch positioned at light control
 - Power Module Lithium Battery
 
 Optional hardware:
 - 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27) positioned at view finder
 - DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect
-- Yashica Pro-50DX external flash light with pcb mounted led
+- Yashica Pro-50DX external flash light with PCB mounted LED
 - 433MHz RF wireless transmitter receiver module (GPIO12) for triggering external flash light wirelessly
 - 5 volt relay module for controlling external led flash light
 
