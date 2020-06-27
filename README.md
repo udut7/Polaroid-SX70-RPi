@@ -36,8 +36,8 @@ Hardware:
 Optional hardware:
 - 0.96 inch (80x160) TFT display 65K full color SPI (GPIO3, GPIO10, GPIO11, GPIO22 & GPIO27) positioned at view finder
 - DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect
-- Yashica Pro-50DX external flash light with PCB mounted LED
+- Yashica Pro-50DX external flash light with PCB mounted white LED
 - 433MHz RF wireless transmitter receiver module (GPIO12) for triggering external flash light wirelessly
-- 5 volt relay module for controlling external led flash light
+- 5 volt relay module for controlling external flash light
 
 Next development: black and white photo, shutter sound effect, external flash light
