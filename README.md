@@ -3,8 +3,6 @@ Polaroid SX-70 camera using Raspberry Pi Zero W
 
 Automatically upload photo single exposure, photo double exposure and video with polaroid style frame, date and time variables to twitter account at https://twitter.com/SX70_RPi
 
-![alt text](https://github.com/udut7/Polaroid-SX70-RPi/blob/master/SX70_RPi.jpg?raw=true "Polaroid SX-70 camera Raspberry Pi Zero W, automatically upload photo to https://twitter.com/SX70_RPi")
-
 Operating System:
 - Raspbian Stretch Lite
 
