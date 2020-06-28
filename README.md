@@ -3,6 +3,8 @@ Polaroid SX-70 camera using Raspberry Pi Zero W
 
 Automatically upload photo single exposure, photo double exposure and video with polaroid style frame, date and time variables to twitter account at https://twitter.com/SX70_RPi
 
+![alt text](https://github.com/udut7/Polaroid-SX70-RPi/blob/master/SX70_Raspberry_Pi.jpg?raw=true "Polaroid SX-70 camera Raspberry Pi Zero W, automatically upload photo to https://twitter.com/SX70_RPi")
+
 Operating System:
 - Raspbian Stretch Lite
 
@@ -36,6 +38,7 @@ Optional hardware:
 - DC Stepper Motor Drive Controller (GPIO13, GPIO17, GPIO19 & GPIO26) for polaroid mechanical shutter sound effect
 - Yashica Pro-50DX external flash light with PCB mounted white LED
 - 433MHz RF wireless transmitter receiver module (GPIO12) for triggering external flash light wirelessly
-- 5 volt relay module for controlling external flash light
+- 5 volt relay module (GPIO23) for controlling external flash light
+- Buzzer module (GPIO24) for sound indicator
 
-Next development: black and white photo, shutter sound effect, external flash light
+Next development: black and white photo, shutter sound effect, external flash light, wireless shutter release
